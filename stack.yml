@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1
+
+functions:
+  show-exceptions:
+    lang: node
+    handler: ./hander.js
+    image: omgimalexis/show-exceptions
