@@ -1,9 +1,10 @@
 provider:
   name: faas
-  gateway: http://127.0.0.1
+  gateway: http://127.0.0.1:8080
 
 functions:
   show-exceptions:
     lang: node
-    handler: ./hander.js
+    handler: ./show-exceptions
     image: omgimalexis/show-exceptions
+    readonly_root_filesystem: true
